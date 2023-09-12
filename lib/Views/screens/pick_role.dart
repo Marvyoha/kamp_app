@@ -4,7 +4,7 @@ import 'package:kamp_app/Constants/fontstyles.dart';
 import 'package:kamp_app/Constants/globalvariables.dart';
 
 import '../widgets/introbutton.dart';
-import '../widgets/logo.dart';
+import '../widgets/logos.dart';
 import 'founder path/pick_role_founder.dart';
 
 class PickRoleScreen extends StatelessWidget {

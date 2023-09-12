@@ -17,5 +17,22 @@ class GlobalVariables {
     return const EdgeInsets.fromLTRB(10, 60, 10, 30);
   }
 
+  static mediumButtonPadding(BuildContext context) {
+    return const EdgeInsets.all(5);
+  }
+
+  static smallButtonPadding(BuildContext context) {
+    return const EdgeInsets.all(2);
+  }
+
+  static EdgeInsets mainScreenPadding(BuildContext context) {
+    return const EdgeInsets.only(
+      left: 15,
+      right: 15,
+      top: 6,
+      bottom: 10,
+    );
+  }
+
   static const spacing = SizedBox(height: 20);
 }

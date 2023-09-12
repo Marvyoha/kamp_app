@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kamp_app/Core/btmnavbarprovider.dart';
+import 'package:provider/provider.dart';
 
 import 'Views/screens/splashscreen.dart';
 
@@ -12,11 +14,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Kamp.',
-      theme: ThemeData(useMaterial3: true),
-      home: const Splashscreen(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => BtmNavBarProvider()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Kamp.',
+        theme: ThemeData(useMaterial3: true),
+        home: const Splashscreen(),
+      ),
     );
   }
 }

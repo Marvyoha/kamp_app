@@ -4,6 +4,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:kamp_app/Constants/colors.dart';
 import 'package:kamp_app/Constants/fontstyles.dart';
 import 'package:kamp_app/Constants/globalvariables.dart';
+import 'package:kamp_app/Views/screens/main/mainpage.dart';
 
 import '../../widgets/formbutton.dart';
 
@@ -68,7 +69,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
                               color: AppColors.containerColor,
@@ -157,7 +158,10 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
             // Complete Application button
             FormButton(
               label: 'Complete Application',
-              ontap: () {},
+              ontap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const MainPage()));
+              },
             ),
           ],
         ),

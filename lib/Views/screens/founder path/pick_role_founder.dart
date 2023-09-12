@@ -5,7 +5,7 @@ import '../../../Constants/colors.dart';
 import '../../../Constants/fontstyles.dart';
 import '../../../Constants/globalvariables.dart';
 import '../../widgets/introbutton.dart';
-import '../../widgets/logo.dart';
+import '../../widgets/logos.dart';
 
 class PickRoleFounder extends StatelessWidget {
   const PickRoleFounder({super.key});
