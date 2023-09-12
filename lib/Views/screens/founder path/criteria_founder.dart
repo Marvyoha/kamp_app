@@ -19,6 +19,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
 
   @override
   Widget build(BuildContext context) {
+    // List of industries
     List<String> industry = [
       'Health',
       'Travel',
@@ -36,6 +37,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
           alignment: Alignment.bottomCenter,
           children: [
             ListView(children: [
+              // Header
               Text(
                 'Let\'s get you matched',
                 textAlign: TextAlign.center,
@@ -43,6 +45,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
               ),
               GlobalVariables.spacing,
               GlobalVariables.spacing,
+              // Industry question
               Text(
                 'What industry do you operate in',
                 style: FontStyles.bodyLarge,
@@ -83,6 +86,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                   ),
                 ),
               ),
+              // See More button
               GestureDetector(
                 onTap: () {
                   setState(() {
@@ -96,6 +100,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                           .copyWith(color: AppColors.tertiaryColor)),
                 ),
               ),
+              // Expansion Tiles
               ExpansionTile(
                 title: Text(
                   'What do you need the investment for:',
@@ -137,6 +142,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                 ],
               ),
               GlobalVariables.spacing,
+              // Skip for now button
               GestureDetector(
                 onTap: () {},
                 child: Center(
@@ -148,6 +154,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                 ),
               ),
             ]),
+            // Complete Application button
             FormButton(
               label: 'Complete Application',
               ontap: () {},
