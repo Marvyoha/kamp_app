@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:kamp_app/Constants/globalvariables.dart';
-import 'package:kamp_app/Core/btmnavbarprovider.dart';
-import 'package:kamp_app/Views/screens/main/pages/HomePage.dart';
-import 'package:kamp_app/Views/screens/main/pages/message.dart';
-import 'package:kamp_app/Views/screens/main/pages/morepage.dart';
-import 'package:kamp_app/Views/screens/main/pages/notificationpage.dart';
-import 'package:kamp_app/Views/widgets/btmnavbar.dart';
-import 'package:kamp_app/Views/widgets/logos.dart';
+
 import 'package:provider/provider.dart';
 
+import '../../../Constants/globalvariables.dart';
+import '../../../Core/btmnavbarprovider.dart';
+import '../../widgets/btmnavbar.dart';
 import '../../widgets/customappbar.dart';
+import 'pages/HomePage.dart';
+import 'pages/message.dart';
+import 'pages/morepage.dart';
+import 'pages/notificationpage.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

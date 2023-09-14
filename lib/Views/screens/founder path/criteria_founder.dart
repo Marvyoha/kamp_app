@@ -62,7 +62,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
                             crossAxisCount: 2),
                     itemCount: industry.length,
                     itemBuilder: (context, index) {
-                      final isBig = industry[index].length > 5;
+                      // final isBig = industry[index].length > 5;
 
                       return Visibility(
                         visible: isGridViewVisible ? true : index < 3,

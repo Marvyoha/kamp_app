@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:kamp_app/Constants/colors.dart';
-import 'package:kamp_app/Constants/globalvariables.dart';
-import 'package:kamp_app/Core/btmnavbarprovider.dart';
+
 import 'package:provider/provider.dart';
+
+import '../../Constants/colors.dart';
+import '../../Core/btmnavbarprovider.dart';
 
 class BtmNavBar extends StatefulWidget {
   const BtmNavBar({super.key});
