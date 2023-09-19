@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kamp_app/Core/btmnavbarprovider.dart';
+
 import 'package:provider/provider.dart';
 
-import 'Views/screens/splashscreen.dart';
+import 'Core/providers/btmnavbarprovider.dart';
+import 'Core/routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => BtmNavBarProvider()),
       ],
       child: MaterialApp(
+        onGenerateRoute: RouteGenerator.generateRoute,
         debugShowCheckedModeBanner: false,
         title: 'Kamp.',
         theme: ThemeData(useMaterial3: true),
-        home: const Splashscreen(),
+        initialRoute: 'SplashScreen',
       ),
     );
   }

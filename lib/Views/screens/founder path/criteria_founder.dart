@@ -159,8 +159,7 @@ class _CriteriaFounderState extends State<CriteriaFounder> {
             FormButton(
               label: 'Complete Application',
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const MainPage()));
+                Navigator.pushNamed(context, 'MainPage');
               },
             ),
           ],

@@ -5,7 +5,6 @@ import 'package:kamp_app/Constants/globalvariables.dart';
 
 import '../widgets/introbutton.dart';
 import '../widgets/logos.dart';
-import 'founder path/pick_role_founder.dart';
 
 class PickRoleScreen extends StatelessWidget {
   const PickRoleScreen({super.key});
@@ -30,10 +29,7 @@ class PickRoleScreen extends StatelessWidget {
             IntroButton(
                 label: 'Founder',
                 ontap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const PickRoleFounder()));
+                  Navigator.pushNamed(context, 'PickRoleFounder');
                 }),
             IntroButton(label: 'Investor', ontap: () {}),
             IntroButton(label: 'Talent', ontap: () {})

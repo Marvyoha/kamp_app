@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../Constants/globalvariables.dart';
-import '../../../Core/btmnavbarprovider.dart';
+import '../../../Core/providers/btmnavbarprovider.dart';
 import '../../widgets/btmnavbar.dart';
 import '../../widgets/customappbar.dart';
 import 'pages/HomePage.dart';

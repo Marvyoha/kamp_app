@@ -43,10 +43,7 @@ class CreateAccountFounder extends StatelessWidget {
           FormButton(
             label: 'Continue',
             ontap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const CriteriaFounder()));
+              Navigator.pushNamed(context, 'CriteriaFounder');
             },
             icon: Ionicons.arrow_forward_circle,
           ),

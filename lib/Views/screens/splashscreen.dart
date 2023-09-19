@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:kamp_app/Views/screens/pick_role.dart';
 
 import '../../Constants/colors.dart';
 import '../../Constants/fontstyles.dart';
 
-class Splashscreen extends StatelessWidget {
-  const Splashscreen({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
+
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 1500), () {
+      Navigator.pushNamed(context, 'PickRoleScreen');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    SchedulerBinding.instance.addPostFrameCallback((_) {
-      Future.delayed(const Duration(seconds: 2), () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const PickRoleScreen()),
-        );
-      });
-    });
-
     return Scaffold(
       body: Container(
         color: AppColors.primaryColor,

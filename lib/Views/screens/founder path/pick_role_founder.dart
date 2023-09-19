@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kamp_app/Views/screens/founder%20path/create_account_founder.dart';
 
 import '../../../Constants/colors.dart';
 import '../../../Constants/fontstyles.dart';
@@ -28,18 +27,12 @@ class PickRoleFounder extends StatelessWidget {
             IntroButton(
                 label: 'Investor',
                 ontap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const CreateAccountFounder()));
+                  Navigator.pushNamed(context, 'CreateAccountFounder');
                 }),
             IntroButton(
                 label: 'Talent',
                 ontap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const CreateAccountFounder()));
+                  Navigator.pushNamed(context, 'CreateAccountFounder');
                 })
           ]),
         ),

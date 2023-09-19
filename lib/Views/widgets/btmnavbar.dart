@@ -4,7 +4,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:provider/provider.dart';
 
 import '../../Constants/colors.dart';
-import '../../Core/btmnavbarprovider.dart';
+import '../../Core/providers/btmnavbarprovider.dart';
 
 class BtmNavBar extends StatefulWidget {
   const BtmNavBar({super.key});
