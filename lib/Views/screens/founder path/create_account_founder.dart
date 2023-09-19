@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:kamp_app/Constants/fontstyles.dart';
-import 'package:kamp_app/Constants/globalvariables.dart';
-import 'package:kamp_app/Views/screens/founder%20path/criteria_founder.dart';
-import 'package:kamp_app/Views/widgets/dottedbutton.dart';
-import 'package:kamp_app/Views/widgets/formtextfield.dart';
 
+import '../../../Constants/fontstyles.dart';
+import '../../../Constants/globalvariables.dart';
+import '../../widgets/dottedbutton.dart';
 import '../../widgets/formbutton.dart';
+import '../../widgets/formtextfield.dart';
 
 class CreateAccountFounder extends StatelessWidget {
   const CreateAccountFounder({super.key});

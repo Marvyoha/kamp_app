@@ -4,7 +4,6 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:kamp_app/Constants/colors.dart';
 import 'package:kamp_app/Constants/fontstyles.dart';
 import 'package:kamp_app/Constants/globalvariables.dart';
-import 'package:kamp_app/Views/screens/main/mainpage.dart';
 
 import '../../widgets/formbutton.dart';
 
